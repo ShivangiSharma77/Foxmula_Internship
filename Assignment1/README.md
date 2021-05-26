@@ -1,5 +1,5 @@
 # Assignment 1
-##Basic OOPs Concepts
+## Basic OOPs Concepts
 
 1. Create a class called Time, which has three private instance variables – hour, min and sec. It contains a
 method called add ( ) which takes one Time object as parameter and print the added value of the calling
