@@ -1,4 +1,4 @@
-
+package src.com.foxmula.DailyTask1;
 import java.util.*;
 
 public class StackOperations {
