@@ -1,4 +1,4 @@
-package Assignment1;
+package src.com.foxmula.DailyTask1;
 class Calling_Quadilateral
 {
     public static void main(String args[])
