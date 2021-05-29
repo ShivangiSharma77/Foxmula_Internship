@@ -1,4 +1,4 @@
-package Assignment1;
+package src.com.foxmula.DailyTask1;
 class Square1 extends Quadilateral
 {
     Square1(int z1,int z2,int z3,int z4,int w1,int w2,int w3,int w4)
