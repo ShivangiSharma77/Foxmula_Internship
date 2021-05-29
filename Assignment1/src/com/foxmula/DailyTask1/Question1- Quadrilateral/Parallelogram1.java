@@ -1,4 +1,4 @@
-package Assignment1;
+package src.com.foxmula.DailyTask1;
 class Parallelogram1 extends Quadilateral
 {
     private int ht;
