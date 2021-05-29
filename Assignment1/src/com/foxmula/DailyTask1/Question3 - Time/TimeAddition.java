@@ -1,3 +1,5 @@
+package src.com.foxmula.DailyTask1;
+
 import java.util.*; 
 public class Time_Addition {
   private int hr,min,sec;
