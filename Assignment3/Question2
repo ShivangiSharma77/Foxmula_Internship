@@ -1,0 +1,39 @@
+
+package com.FoxmulaAssignment3;
+import java.util.Scanner;
+
+class Invalid extends Exception{
+	public Invalid(String message) {
+		super(message);
+	}
+}
+public class ExceptionOddElement {
+	private static boolean Prime(int num) {
+	for(int i=2;i<num/2;i++) {
+			if(num%i == 0 ) {
+			  System.out.println("Not Prime");
+			  return false;
+		}}
+	return true;
+	}
+private static void PrimeOdd(int num) throws Invalid{
+		if(checkPrime(number) && number%2!=0) {
+			throw new Prime("Invalid Number");
+		  }
+		else
+    {
+		System.out.println("Not prime and odd");
+		}
+	  }
+	public static void main(String[] args){
+	Scanner scanner=new Scanner(System.in);
+	System.out.print("Enter the number:");
+	int num=scanner.nextInt();
+		try {
+			PrimeOdd(num);	
+		}
+		catch (Exception e) {
+			System.out.println("Exception: "+e);
+		}	
+	}
+}
