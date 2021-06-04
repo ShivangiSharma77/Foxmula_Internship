@@ -1,7 +1,7 @@
 package com.foxmula.DailyTask3;
 import java.util.*;
 
-public class Occurence {
+public class Sorting {
 void values(int arr[],int num){
 
 Scanner sc= new Scanner(System.in);
@@ -22,81 +22,33 @@ System.out.println("Frequency ");
 	  for (HashMap.Entry<Integer, Integer> i:hashMap.entrySet()) 
 	  	{
 		System.out.print("("+i.getKey()+i.getValue()+")");
-		}			
-                          }
-
-
-
-
-package com.foxmula.DailyTask3;
-import java.util.*;
-
-public class Sorting{
-void values(int arr[],int num){
+		}
+		System.out.println("Sorted Array");
+		sortElements(hashMap);
+                }
 		
-		Scanner sc= new Scanner(System.in);
-		
-		System.out.println("Enter the elements to be inserted in an array ");
-		for (int i=0;i<n;i++) {
-			arr[i]=sc.nextInt();
-			}	
-	}
-	
-	void sortByValue(HashMap<Integer,Integer> hashMap) {
-	
-		//Creating a list from elements of HashMap
-       		List<Map.Entry<Integer, Integer> > list =
-		       new LinkedList<Map.Entry<Integer, Integer> >(hashMap.entrySet());
-
-		//Sort the list
-		Collections.sort(list, new Comparator<Map.Entry<Integer, Integer>>() {
-			@Override
-		    public int compare(Map.Entry<Integer, Integer> ele1,
-				       Map.Entry<Integer, Integer> ele2)
-		    {
-			return (ele1.getValue()).compareTo(ele2.getValue());
-		    }
+void sortElements(HashMap<Integer,Integer> hashMap) {
+List<Map.Entry<Integer, Integer> > list = new LinkedList<Map.Entry<Integer, Integer> >(hashMap.entrySet());
+Collections.sort(list, new Comparator<Map.Entry<Integer, Integer>>() {
+@Override
+public int check(Map.Entry<Integer, Integer> FirstElement,Map.Entry<Integer, Integer> SecondElement)
+	        {
+	        return (FirstElement.getValue()).compareTo(SecondElement.getValue());
+		}
 		});
-
-		for (Map.Entry<Integer, Integer> out : list) {
-			System.out.print("("+out.getKey()+"-->"+out.getValue()+")  ");
+          for (Map.Entry<Integer, Integer> out : list)
+	        {
+		System.out.print( "+out.getKey()+"-->"+out.getValue()+");
 		}
-
-	}
-
-
-	void checkOccurence(int arr[]) {
-		
-		HashMap<Integer,Integer> hashMap = new HashMap<Integer, Integer>();
-		
-		for (int i=0;i<arr.length;i++) { 
-			hashMap.put(arr[i],(hashMap.get(arr[i])==null) ? 1:hashMap.get(arr[i])+1);
-			}
-	    
-		System.out.println("The frequency of elements= ");
-		
-		for (HashMap.Entry<Integer, Integer> i:hashMap.entrySet()) {
-			System.out.print("("+i.getKey()+"-->"+i.getValue()+")  ");
-		}
-		
-		System.out.println("\nThe sorted array is: ");
-		sortByValue(hashMap);
-		
-	}
-	
-	public static void main(String[] args) {
-		
-		Scanner sc= new Scanner(System.in);
-		
-		System.out.print("Enter the number of Elements you want to insert in an array: ");
-		int n=sc.nextInt();
-		
-		int arr[]=new int[n];
-		
-		ArrayFrequencySort tosort=new ArrayFrequencySort();
-		tosort.addElements(arr, n);
-		tosort.checkOccurence(arr);
+	  }
+public static void main(String[] args) {
+Scanner sc= new Scanner(System.in);
+System.out.print("Enter the number of Elements you want to insert in an array: ");
+int num=sc.nextInt();
+int arr[]=new int[num];
+Sorting obj =new Sorting();
+		obj.values(arr, num);
+		obj.Frequency(arr);
 	
 		}
-
 }
