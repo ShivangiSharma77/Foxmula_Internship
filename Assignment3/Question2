@@ -22,7 +22,7 @@ public class ExceptionOddElement {
 	return true;
 	}
 void PrimeOdd(int num) throws Invalid{
-		if(checkPrime(number) && number%2!=0 && number>1) {
+		if(checkPrime(num) && num%2!=0 && num>1) {
 			throw new Prime("Invalid Number");
 		  }
 		else
