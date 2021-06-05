@@ -8,8 +8,8 @@ package com.foxmula.DailyTask3;
 import java.util.Scanner;
 
 class Invalid extends Exception{
-	public Invalid(String message) {
-		super(message);
+	public Invalid(String msg) {
+		super(msg);
 	}
 }
 public class ExceptionOddElement {
