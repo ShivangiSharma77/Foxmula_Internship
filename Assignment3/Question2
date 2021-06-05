@@ -22,8 +22,8 @@ public class ExceptionOddElement {
 	return true;
 	}
 void PrimeOdd(int num) throws Invalid{
-		if(checkPrime(num) && num%2!=0 && num>1) {
-			throw new Prime("Invalid Number");
+		if(Prime(num) && num%2!=0 && num>1) {
+			throw new Invalid("Invalid Number");
 		  }
 		else
     {
