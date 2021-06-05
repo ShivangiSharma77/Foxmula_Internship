@@ -1,3 +1,9 @@
+/*
+* program to calculate frequency of each element of an array and then sort by value
+* @author  Shivangi Sharma
+* 
+*/
+
 package com.foxmula.DailyTask3;
 import java.util.*;
 
