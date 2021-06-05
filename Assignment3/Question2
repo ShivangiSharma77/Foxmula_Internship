@@ -1,9 +1,3 @@
-/**
-* program to throw Custom Exception with proper message Number is invalid if number is prime and odd.
-* @author  Shivangi Sharma
-* 
-*/
-
 package com.foxmula.DailyTask3;
 import java.util.Scanner;
 
@@ -21,8 +15,8 @@ public class ExceptionOddElement {
 		}}
 	return true;
 	}
-private static void PrimeOdd(int num) throws Invalid{
-		if(checkPrime(number) && number%2!=0) {
+void PrimeOdd(int num) throws Invalid{
+		if(checkPrime(number) && number%2!=0 && number>1) {
 			throw new Prime("Invalid Number");
 		  }
 		else
