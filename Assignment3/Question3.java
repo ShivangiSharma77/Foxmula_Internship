@@ -44,7 +44,7 @@ public int check(Map.Entry<Integer, Integer> FirstElement,Map.Entry<Integer, Int
 		});
           for (Map.Entry<Integer, Integer> out : list)
 	        {
-		System.out.print( "+out.getKey()+"-->"+out.getValue()+");
+		System.out.print( "+out.getKey() +" "+out.getValue()+");
 		}
 	  }
 public static void main(String[] args) {
