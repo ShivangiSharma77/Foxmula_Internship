@@ -37,7 +37,7 @@ void sortElements(HashMap<Integer,Integer> hashMap) {
 List<Map.Entry<Integer, Integer> > list = new LinkedList<Map.Entry<Integer, Integer> >(hashMap.entrySet());
 Collections.sort(list, new Comparator<Map.Entry<Integer, Integer>>() {
 
-public int check(Map.Entry<Integer, Integer> FirstElement,Map.Entry<Integer, Integer> SecondElement)
+public int compare(Map.Entry<Integer, Integer> FirstElement,Map.Entry<Integer, Integer> SecondElement)
 	        {
 	        return (FirstElement.getValue()).compareTo(SecondElement.getValue());
 		}
