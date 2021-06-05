@@ -33,6 +33,7 @@ System.out.println("Frequency ");
 	
 public static void main(String[] args) {
 Scanner sc= new Scanner(System.in);
+	
 System.out.print("Number of Values");
 		int num=sc.nextInt();
 		int arr[]=new int[num];
