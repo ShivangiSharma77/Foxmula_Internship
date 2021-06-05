@@ -1,5 +1,10 @@
+/**
+* program to throw Custom Exception with proper message Number is invalid if number is prime and odd.
+* @author  Shivangi Sharma
+* 
+*/
 
-package com.FoxmulaAssignment3;
+package com.foxmula.DailyTask3;
 import java.util.Scanner;
 
 class Invalid extends Exception{
